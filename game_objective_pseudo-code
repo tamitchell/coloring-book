@@ -1,0 +1,89 @@
+Game objective: Amie wants to play hide and seek, find her!
+
+Audience: 8+ and up
+
+Enviroment: Amie(target) is hiding in the living room appartment behind various furniture.
+    
+    Some furniture ideas can include:
+        
+            1.Sofa
+            2.Corner table
+            3.Rug
+            4.Plant
+            5.TV table
+            6.TV
+            7.Window
+            
+Scenario:
+
+Amie will show herself in the center of the living room, greeting the user.
+
+Will ask user to wait 10 seconds while she hides
+
+User has 1 minute to find her.
+
+Gameplay: 
+
+    User should be able to click on each item, when the user clicks on the item it should lift the item in the air to reveal whether or not Amie is behind/underneath the item
+    
+    After the item is lifted, a message to visibly display whether or not Amie is underneath the object
+    
+    If Amie is not underneath the object, after the message is closed, the object will drift back down.
+    
+    If Amie IS revealed to be under the object, Amie will bark congradualating the user and an option to reset the game and amie's location will commence the cycle all over again
+    
+Code:
+
+Building enviroment:
+
+    Perspective: Deep or Flat?
+    
+        For this project I will be experimenting with the z-index part of CSS that I hope will allow to bring a sort of depth to the living room.
+
+   Furniture: CSS or Icons?
+    
+        For the speed of this project, it would be better to create an empty canvas in css and use Creative Common icons/png images because they will be easier to manipulate in both css and javascript.
+        
+        The images are referenced at the end of this document.
+        
+    Amie: Animated or Static?
+    
+        Preferably Amie's animations should be a simple head nod and tail wag. This will be created using pure css/sass.
+        
+Code:
+
+
+
+    function greetUser(){
+        Amie greets user and asks them to wait will she hides
+        
+        Should operate as a click through
+        
+        With next click triggering the next function
+    }
+    
+    function countDown (){
+        
+        One timer at the bottom of the screen should countdown from 3
+        
+        Once that is over, another timer at the top of the screen should begin counting down from 1:00
+
+    }
+    
+    function revealAmie(){
+    
+        Most likely will consist of if statements
+        
+        User should be able to click on object and reveal Amie
+        
+        If not there, message appears and object floats back down
+        
+        If there, timer stops, Amie barks, message congradulates user and reset(playAgain()) function appears
+    
+    }
+    
+    
+    function playAgain(){
+    resets game without greeting user function
+    }
+    
